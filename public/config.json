@@ -3,13 +3,13 @@
     "metaData": {
         "icon": "images/icon.png",
         "iconSmall": "images/iconSmall.png",
-        "category": "message"
+        "category": "Custom Activities"
     },
     "type": "REST",
     "lang": {
         "en-US": {
-            "name": "Template",
-          "description": "A Template for a custom Journey Builder activity",
+            "name": "CloudPage",
+          "description": "A Template for invoking CloudPages",
           "step1Label": "Configure Activity"
         }
     },
