@@ -3,25 +3,21 @@
     "metaData": {
         "icon": "images/icon.png",
         "iconSmall": "images/iconSmall.png",
-        "category": "Custom"
+        "category": "message"
     },
     "type": "REST",
     "lang": {
         "en-US": {
-            "name": "CloudPage",
-          "description": "A Template for invoking CloudPages",
+            "name": "Template",
+          "description": "A Template for a custom Journey Builder activity",
           "step1Label": "Configure Activity"
         }
     },
     "arguments": {
         "execute": {
-           "inArguments":[
-              {
-               "mobilenumber": "{{Contact.Attribute.IS_Triggers.mobilenumber}}"
-              }
-                   ],
+           "inArguments":[],
           "outArguments": [],
-          "url": "https://mc80zzcs5gkfpv7l1139vq1v4k0m.pub.sfmc-content.com/dvizamati2i",
+          "url": "https://<your-domain-here>/journeybuilder/execute",
            "verb": "POST",
             "body": "",
             "header": "",
@@ -31,8 +27,26 @@
         }
     },
     "configurationArguments": {
-     "applicationExtensionKey": "edeae04d-2a93-4ed1-a8c1-9cbef3175162",
-      
+      "save": {
+        "url": "https://<your-domain-here>/journeybuilder/save",
+          "verb": "POST",
+        "useJwt": true
+       },
+       "publish": {
+        "url": "https://<your-domain-here>/journeybuilder/publish",
+           "verb": "POST",
+        "useJwt": true
+       },
+      "stop": {
+        "url": "https://<your-domain-here>/journeybuilder/stop",
+           "verb": "POST",
+        "useJwt": true
+      },
+      "validate": {
+        "url": "https://<your-domain-here>/journeybuilder/validate",
+        "verb": "POST",
+        "useJwt": true
+      }
     },
     "wizardSteps": [
         { "label": "Configure Activity", "key": "step1" }
@@ -45,5 +59,11 @@
         }
     },
     "schema": {
+        "arguments": {
+            "execute": {
+                "inArguments": [],
+                "outArguments": []
             }
         }
+    }
+}
