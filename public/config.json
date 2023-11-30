@@ -31,25 +31,7 @@
         }
     },
     "configurationArguments": {
-      "save": {
-        "url": "https://whatsapp-optin-4a80bbbd061f.herokuapp.com/journeybuilder/save",
-          "verb": "POST",
-        "useJwt": true
-       },
-       "publish": {
-        "url": "https://whatsapp-optin-4a80bbbd061f.herokuapp.com/journeybuilder/publish",
-           "verb": "POST",
-        "useJwt": true
-       },
-      "stop": {
-        "url": "https://whatsapp-optin-4a80bbbd061f.herokuapp.com/journeybuilder/stop",
-           "verb": "POST",
-        "useJwt": true
-      },
-      "validate": {
-        "url": "https://whatsapp-optin-4a80bbbd061f.herokuapp.com/journeybuilder/validate",
-        "verb": "POST",
-        "useJwt": true
+     "applicationExtensionKey": "edeae04d-2a93-4ed1-a8c1-9cbef3175162",
       }
     },
     "wizardSteps": [
@@ -63,10 +45,6 @@
         }
     },
     "schema": {
-        "arguments": {
-            "execute": {
-                "inArguments": [],
-                "outArguments": []
             }
         }
     }
