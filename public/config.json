@@ -3,54 +3,37 @@
     "metaData": {
         "icon": "images/icon.png",
         "iconSmall": "images/iconSmall.png",
-        "category": "message"
+        "category": "custom"
     },
     "type": "REST",
     "lang": {
         "en-US": {
-            "name": "Template",
+            "name": "WA OptIn",
           "description": "A Template for a custom Journey Builder activity",
           "step1Label": "Configure Activity"
         }
     },
     "arguments": {
         "execute": {
-           "inArguments":[],
+           "inArguments":[
+               {
+          "mobilenumber": "{{Contact.Attribute.YourDataExtensionName.mobilenumber}}"
+               }
+           ],
           "outArguments": [],
-          "url": "https://<your-domain-here>/journeybuilder/execute",
+          "url": "https://mc80zzcs5gkfpv7l1139vq1v4k0m.pub.sfmc-content.com/dvizamati2i",
            "verb": "POST",
             "body": "",
             "header": "",
             "format": "json",
-            "useJwt": true,
+            "useJwt": false,
             "timeout": 10000
         }
     },
     "configurationArguments": {
-      "save": {
-        "url": "https://<your-domain-here>/journeybuilder/save",
-          "verb": "POST",
-        "useJwt": true
-       },
-       "publish": {
-        "url": "https://<your-domain-here>/journeybuilder/publish",
-           "verb": "POST",
-        "useJwt": true
-       },
-      "stop": {
-        "url": "https://<your-domain-here>/journeybuilder/stop",
-           "verb": "POST",
-        "useJwt": true
-      },
-      "validate": {
-        "url": "https://<your-domain-here>/journeybuilder/validate",
-        "verb": "POST",
-        "useJwt": true
-      }
+      "applicationExtensionKey": "edeae04d-2a93-4ed1-a8c1-9cbef3175162"
     },
-    "wizardSteps": [
-        { "label": "Configure Activity", "key": "step1" }
-    ],
+    "wizardSteps": [],
     "userInterfaces": {
         "configModal": {
             "height": 400,
