@@ -32,7 +32,7 @@
     },
     "configurationArguments": {
      "applicationExtensionKey": "edeae04d-2a93-4ed1-a8c1-9cbef3175162",
-      }
+      
     },
     "wizardSteps": [
         { "label": "Configure Activity", "key": "step1" }
@@ -47,5 +47,3 @@
     "schema": {
             }
         }
-    }
-}
