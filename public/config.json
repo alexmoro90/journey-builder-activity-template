@@ -15,9 +15,13 @@
     },
     "arguments": {
         "execute": {
-           "inArguments":[],
+           "inArguments":[
+              {
+               "mobilenumber": "{{Contact.Attribute.IS_Triggers.mobilenumber}}"
+              }
+                   ],
           "outArguments": [],
-          "url": "https://whatsapp-optin-4a80bbbd061f.herokuapp.com/journeybuilder/execute",
+          "url": "https://mc80zzcs5gkfpv7l1139vq1v4k0m.pub.sfmc-content.com/dvizamati2i",
            "verb": "POST",
             "body": "",
             "header": "",
